@@ -99,6 +99,7 @@
     background-color: transparent;
     color: white;
     margin: 5% 0% 0% 15%;
+    width: 80%;
 }
 .sub-details select option{
     background-color: rgb(38, 43, 77);
@@ -108,4 +109,5 @@
     width:30%;
     margin:3% 0% 0% 35%;
 }
+
 
