@@ -8,14 +8,14 @@ def home():
 
 @app.route("/callme",methods=['GET',"POST"])
 def callme_details():
-    name=request.form("name")
-    email=request.form("email")
-    ph_no=request.form("phone_number")
-    course=request.form("course")
-    return f""" mr {name} your details was updated check once again
-            name = {name}
-            email = {email}
-            phone.no ={ph_no}
+    name=request.form["name"]
+    email=request.form["email"]
+    ph_no=request.form["phone_number"]
+    course=request.form["course"]
+    return f""" mr {name} your details was updated check once again <br><br>
+            name = {name}<br>
+            email = {email}<br>
+            phone.no ={ph_no}<br>
             course = {course} """
 
 app.run(debug=True)
